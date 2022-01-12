@@ -1,0 +1,28 @@
+// features area css
+.feature-btn {
+    background: transparent;
+    border: 0;
+    & a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    & i{
+        font-size: 15px;
+        padding-left: 3px;
+    }
+    }
+  }
+  .feature-btn a i{
+    font-size: 15px;
+    padding-left: 3px;    
+  }
+ 
+//   .feature-btn a {
+//     text-decoration: none;
+//     font-weight: 600;
+//     color: black;
+//     & i{
+//         font-size: 15px;
+//         padding-left: 3px;
+//     }
+//   }

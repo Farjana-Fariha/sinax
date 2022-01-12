@@ -1,0 +1,34 @@
+// intro area css
+.intro-area{
+    background-color: rgba(148, 143, 143, 0.424);
+    position: relative;
+}
+.intro-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.intro-title{
+    text-align: left;
+    margin-top: 70px;
+}
+.submit-btn{
+    padding: 10px 30px;
+        font-weight: 600;
+        border: 0;
+        background: #ff0000c9;
+        color: white;
+        border-radius: 4px;
+        transition: .3s;
+        &:hover{
+            background-color: rgb(23, 108, 165);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+}

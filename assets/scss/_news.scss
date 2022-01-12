@@ -1,0 +1,18 @@
+.news-area{
+    background-color: rgba(190, 164, 164, 0.198);
+}
+.news{
+   background-color: white;
+   width: 350px;
+    &__img{
+        & img{
+            width:100%
+        }
+    }
+    &__content{
+        & h4{
+            font-weight: bold;
+        }
+       
+    }
+}

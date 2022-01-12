@@ -1,0 +1,77 @@
+// Portfolio css
+.portfolio{
+    &__menu{
+        text-align: center;
+        & button{
+            background: white;
+            border: 0;
+            padding: 10px;
+            &.active{
+                color: red;
+            }
+        }
+    }
+    &__items{
+        position: relative;
+        width: 250px;
+        margin-top: 30px;
+        & .img{
+            & img{
+                width: 100%;
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            background: black;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s;
+        }
+        & .plus{
+            position: absolute;
+            top: 0px;
+            left: 30px;
+            color: white;
+            opacity: 0;
+            transition: .3s;
+            &:hover{
+                opacity: .5;
+            }
+        }
+        & .text{
+            position: absolute;
+            bottom: 30px;
+            left: 0px;
+            color: white;
+            opacity: 0;
+            transition: .3s;
+        }
+        &:hover{
+            &::before{
+                opacity: .5;
+            }
+            & .plus{
+                opacity: 1;
+                top: 30px;
+            }
+            & .text{
+                opacity: 1;
+                left: 30px;
+            }
+          }
+    }
+ 
+}
+
+
+/*important topic
+.portfolio__items:hover::before{
+    opacity: .5;
+}
+.portfolio:hover ::before{
+    opacity:.5;
+}*/

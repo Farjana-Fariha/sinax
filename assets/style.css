@@ -1,0 +1,305 @@
+.header {
+  background-color: black;
+}
+.header__logo {
+  width: 100px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__menu nav ul li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+.header__menu nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+.header__menu nav ul li ul.submenu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  background-color: black;
+  width: 200px;
+}
+.header__menu nav ul li ul.submenu li {
+  display: block;
+}
+.header__menu nav ul li ul.submenu li ul.submenu li {
+  left: 100%;
+  top: 0;
+}
+.header__menu nav ul li:hover ul.submenu {
+  visibility: visible;
+  opacity: 1;
+}
+.header__icon a {
+  margin-left: 20px;
+}
+.header__icon a i {
+  color: white;
+  display: block;
+}
+
+.header__menu nav ul li ul.submenu li ul.submenu {
+  left: 111%;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 120px;
+}
+.section-title h5 {
+  text-transform: uppercase;
+}
+.section-title h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.section-title h1 span {
+  color: red;
+}
+
+.feature__item .card i {
+  font-size: 50px;
+}
+
+.feature__item {
+  width: 285px;
+}
+
+.service {
+  background-color: rgba(168, 145, 145, 0.13);
+}
+
+.portfolio__menu {
+  text-align: center;
+}
+.portfolio__menu button {
+  background: white;
+  border: 0;
+  padding: 10px;
+}
+.portfolio__menu button.active {
+  color: red;
+}
+.portfolio__items {
+  position: relative;
+  width: 250px;
+  margin-top: 30px;
+}
+.portfolio__items .img img {
+  width: 100%;
+}
+.portfolio__items::before {
+  content: "";
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.portfolio__items .plus {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+}
+.portfolio__items .plus:hover {
+  opacity: 0.5;
+}
+.portfolio__items .text {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+}
+.portfolio__items:hover::before {
+  opacity: 0.5;
+}
+.portfolio__items:hover .plus {
+  opacity: 1;
+  top: 30px;
+}
+.portfolio__items:hover .text {
+  opacity: 1;
+  left: 30px;
+}
+
+/*important topic
+.portfolio__items:hover::before{
+    opacity: .5;
+}
+.portfolio:hover ::before{
+    opacity:.5;
+}*/
+.fact-area {
+  background-color: black;
+}
+
+.fact {
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.fact h1 {
+  color: white;
+  font-weight: 700;
+}
+.fact span {
+  color: whitesmoke;
+}
+
+.team {
+  margin-top: 60px;
+}
+.team__member {
+  width: 17.625rem;
+  position: relative;
+}
+.team__member::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.555);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.team__member:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.team__member:hover .team__member-info {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+  left: 0;
+}
+.team__member img {
+  width: 100%;
+}
+.team__member-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 20px;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding-bottom: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.team__member-info .social-icons {
+  font-size: 35px;
+}
+.team__member-info a {
+  color: black;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+  height: 52px;
+  width: 53px;
+  text-align: center;
+  transition: 0.3s;
+}
+.team__member-info a:hover {
+  color: white;
+  background-color: #1f86a5;
+}
+
+.intro-area {
+  background-color: rgba(148, 143, 143, 0.424);
+  position: relative;
+}
+
+.intro-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.intro-title {
+  text-align: left;
+  margin-top: 70px;
+}
+.intro-title button {
+  padding: 10px 30px;
+  font-weight: 600;
+  border: 0;
+  background: #ff0000c9;
+  color: white;
+  transition: 0.3s;
+}
+.intro-title button:hover {
+  background-color: #176ca5;
+}
+
+.single-brand {
+  font-size: 5.625rem;
+  padding-left: 90px;
+  display: inline-block;
+}
+
+.brand-active {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-area {
+  background-color: rgba(190, 164, 164, 0.198);
+}
+
+.news {
+  background-color: white;
+  width: 350px;
+}
+.news__img img {
+  width: 100%;
+}
+.news__content h4 {
+  font-weight: bold;
+}
+
+.footer-widget {
+  margin-top: 70px;
+  margin-left: 220px;
+  font-size: 15px;
+  margin-bottom: 100px;
+}
+.footer-logo {
+  width: 120px;
+}
+.footer-logo img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

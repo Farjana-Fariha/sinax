@@ -1,0 +1,81 @@
+.footer-widget{
+    margin: 70px 0;
+    font-size: 15px;
+    margin-bottom: 100px;
+    color: white;
+    margin-left: 15px;
+    
+    &p{
+        
+    }
+   
+}
+.first-widget{
+    margin-left: 0;
+}
+.footer-logo{
+    width: 120px;
+    & img{
+        width: 100%;
+    }
+}
+.footer-icons{
+    & a{
+        color: white;
+        font-size: 40px;
+        margin-right: 10px;
+        &:hover{
+            color: orange;
+        }
+    }
+}
+.footer-blogs{
+    & span{
+        color: lightslategrey;
+    }
+}
+.subscribe-box{
+   & form{
+       position: relative;
+       & input{
+        background: #3f3f3f;
+        border: 0;
+        height: 40px;
+        width: 60%;
+        &:-moz-placeholder,&::placeholder{
+            color: white;
+        }
+       }
+       & button{
+        position: absolute;
+        height: 100%;
+        background: #3f3f3f;
+        color: white;
+        padding: 0 12px;
+        border: 0;
+        border-left: 1px solid #666;
+       }
+   }
+}
+.copyright-area{
+    background: #3f3f3f;
+    & .copyright-text{
+        color: white;
+        padding-top: 15px;
+    }
+    & ul{
+        margin: 0;
+        text-align: end;
+        & li{
+            list-style: none;
+            display: inline-block;
+            padding: 15px;
+            & a{
+                color: white;
+                text-decoration: none;
+            }
+        } 
+    }
+}
+
+
